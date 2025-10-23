@@ -83,7 +83,7 @@ function Cards({ title, content }) {
           type="text"
           value={searchTerm}
           onChange={handleSearchChange}
-          placeholder="Search cards..."
+          placeholder="Buscar tarjetas..."
           className={styles.searchInput}
         />
       </div>
