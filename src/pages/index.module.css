@@ -1,0 +1,5 @@
+.pageContainer {
+    display: flex; /* Para poner User y Cards uno al lado del otro */
+    background-color: #1a1a1a;
+    min-height: 100vh;
+}

@@ -1,0 +1,23 @@
+.container {
+  border-radius: 4px;
+  background: #29292e;
+  padding: 4px 6px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.container:last-child {
+  margin-right: 0;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.name {
+  color: #cfcfcf;
+  font-size: 10px;
+  font-weight: 300;
+}

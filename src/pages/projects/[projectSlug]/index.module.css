@@ -1,0 +1,60 @@
+/* pages/projects/ProjectDetail.module.css */
+
+.detailContainer {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.backButton {
+    background: none;
+    border: 1px solid #444;
+    color: #39ff14;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.backButton:hover {
+    background-color: #2a2a2a;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #39ff14;
+    margin-bottom: 15px;
+}
+
+.content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.techsHeader {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.techsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.techPill {
+    background-color: #008000; /* Fondo más sólido */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,22 @@
+/* components/card/Card.module.css */
+.container {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  background: #15151C;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+}
+
+.title {
+  color: #6f6e6e;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #666;
+  font-size: 1rem;
+  padding-bottom: 8px;
+}

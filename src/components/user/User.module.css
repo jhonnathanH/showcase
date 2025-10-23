@@ -1,0 +1,89 @@
+
+
+.sidebar {
+    width: 280px;
+    height: 100vh; 
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 30px 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+}
+
+/* --- Perfil --- */
+
+.profileSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    /* Para el borde alrededor del avatar (opcional) */
+    /* border: 2px solid #555; */ 
+}
+
+.userName {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+/* --- Navegación --- */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+/* Usando notación de guiones, accedida con corchetes en JSX */
+.nav-link { 
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    /* Ajuste para simular la línea superior/inferior del hover/activo */
+    border-top: 1px solid transparent; 
+    border-bottom: 1px solid transparent; 
+}
+
+.nav-link:hover {
+    background-color: var(--hover-bg);
+}
+
+.icon {
+    font-size: 1.5rem; 
+    margin-right: 15px;
+    /* Color predeterminado del ícono (blanco) */
+    color: var(--text-light); 
+}
+
+/* --- Estado Activo --- */
+
+.activeLink { 
+    /* Fondo que cubre el texto y el ícono */
+    background-color: var(--active-bg); 
+    /* El texto y el ícono en color verde */
+    color: var(--accent-green) !important; 
+    
+    /* El borde de la imagen de ejemplo es sutil, a veces parece 
+       una línea verde arriba y abajo del texto/icono. */
+    border-top: 1px solid var(--accent-green); 
+    border-bottom: 1px solid var(--accent-green);
+}
+
+.activeLink .icon {
+    /* Aseguramos que el ícono sea verde */
+    color: var(--accent-green); 
+}
