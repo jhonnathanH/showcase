@@ -1,0 +1,63 @@
+/* pages/techs/index.module.css */
+
+/* --- Contenedor Principal (Reemplaza <main>) --- */
+
+.pageMain {
+    /* Reemplaza: min-h-screen bg-zinc-950 text-white flex flex-col items-center py-10 */
+    /*
+      NOTA: min-height y background-color deberían estar en tu Layout.module.css
+      o globals.css para evitar duplicados. Si los quieres solo aquí:
+    */
+    /* min-height: 100vh; */
+    /* background-color: #0c0c0d; */ /* Similar a bg-zinc-950 */
+    
+    color: white; /* text-white */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+    padding-top: 40px; /* py-10 (si 10 = 40px) */
+    padding-bottom: 40px; /* py-10 */
+}
+
+/* --- Contenedor de Contenido (Reemplaza w-full max-w-2xl) --- */
+
+.contentWrapper {
+    /* Reemplaza: w-full max-w-2xl */
+    width: 100%;
+    max-width: 42rem; /* max-w-2xl (768px - 896px dependiendo de la configuración) */
+    padding: 0 1rem; /* Aseguramos padding horizontal */
+}
+
+/* --- Encabezado (Technologies y Botón) --- */
+
+.header {
+    /* Reemplaza: flex justify-between items-center mb-6 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px; /* mb-6 */
+}
+
+.title {
+    /* Reemplaza: text-2xl font-semibold */
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+}
+
+/* --- Botón "Agregar" --- */
+
+.addButton {
+    /* Reemplaza: bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-medium */
+    background-color: #2563eb; /* bg-blue-600 */
+    color: white;
+    padding: 8px 16px; /* px-4 py-2 */
+    border: none;
+    border-radius: 8px; /* rounded-lg */
+    font-weight: 500; /* font-medium */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.addButton:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+}

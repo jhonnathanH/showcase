@@ -1,0 +1,63 @@
+/* components/techs/Techs.module.css */
+
+/* --- Contenedor de Grilla --- */
+
+.gridContainer {
+    /* Reemplaza: grid grid-cols-1 sm:grid-cols-2 gap-4 */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 columna por defecto */
+    gap: 16px; /* gap-4 */
+}
+
+/* Media Query para el diseño responsivo (sm:grid-cols-2) */
+@media (min-width: 640px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --- Elemento Individual (Card de Tecnología) --- */
+
+.techItem {
+    /* Reemplaza: bg-zinc-900 border border-zinc-800 rounded-xl p-4 flex justify-between items-center */
+    background-color: #18181b; /* Similar a bg-zinc-900 */
+    border: 1px solid #27272a; /* Similar a border-zinc-800 */
+    border-radius: 12px; /* rounded-xl */
+    padding: 16px; /* p-4 */
+    display: flex;
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* items-center */
+
+    min-height: 62px;
+}
+
+/* --- Grupo de Información (Logo y Nombre) --- */
+
+.infoGroup {
+    /* Reemplaza: flex items-center gap-3 */
+    display: flex;
+    align-items: center;
+    gap: 12px; /* gap-3 */
+}
+
+.logo {
+    /* Reemplaza: w-8 h-8 rounded-full object-cover */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* rounded-full */
+    object-fit: cover;
+}
+
+.techName {
+    /* Reemplaza: font-medium */
+    font-weight: 500;
+    color: #f0f0f0; /* Texto claro */
+}
+
+/* --- Tipo de Tecnología --- */
+
+.techType {
+    /* Reemplaza: text-sm text-zinc-400 */
+    font-size: 0.875rem; /* text-sm */
+    color: #a1a1aa; /* Similar a text-zinc-400 */
+}

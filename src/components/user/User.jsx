@@ -11,10 +11,10 @@ import {
 import { BiCube } from "react-icons/bi";
 
 const menuItems = [
-  { name: "Dashboard", icon: RiDashboardLine, link: "/dashboard" },
+  { name: "Dashboard", icon: RiDashboardLine, link: "/" },
   { name: "Frontend", icon: RiCodeLine, link: "/frontend", isActive: true },
   { name: "Backend", icon: BiCube, link: "/backend" },
-  { name: "DevOps", icon: RiRuler2Line, link: "/devops" },
+  { name: "Techs", icon: RiRuler2Line, link: "/techs" },
   { name: "Settings", icon: RiSettings3Line, link: "/settings" }
 ];
 
